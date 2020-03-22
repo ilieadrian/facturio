@@ -17,6 +17,8 @@
         font-size: 3rem;
         line-height: 3rem;
         margin-left: 0.5rem; }
+      .main-nav .nav-container .main-nav-logo a {
+        color: #242d52; }
     .main-nav .nav-container .nav-links ul {
       display: flex;
       flex-wrap: wrap; }
@@ -68,29 +70,38 @@ body {
   position: relative;
   overflow: visible; }
 
+button {
+  box-sizing: border-box; }
+
 .btn {
   text-transform: uppercase;
+  display: inline-block;
   font-size: 1.5rem;
   cursor: pointer;
   background-color: #f25f3a;
   color: #fafafa;
   padding: 1rem 3rem;
-  border: 0;
+  border: 3px solid #f25f3a;
+  border-radius: 24px;
   font-weight: 700; }
 
 .btn:hover {
   background-color: #242d52;
+  border: 3px solid #242d52;
   color: #fafafa; }
+
+.btn:focus {
+  outline: none; }
 
 .btn-ghost {
   background-color: transparent;
-  outline: 3px solid #f25f3a;
-  outline-offset: -3px;
+  border: 3px solid #f25f3a;
   color: #242d52;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-right: 2rem; }
 
 .btn-ghost:hover {
-  outline: 3px solid #242d52;
+  border: 3px solid #242d52;
   color: #fafafa; }
 
 h1 {
@@ -102,6 +113,9 @@ p {
   color: #9095a7;
   font-size: 1.5rem;
   line-height: 1.2; }
+
+a {
+  text-decoration: none; }
 
 #lead {
   display: flex;
@@ -117,10 +131,24 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     text-align: left;
-    margin: auto 1rem; }
+    margin: auto 0;
+    padding: 2rem 2rem 2rem 0; }
+    #lead .text-section h1 {
+      font-size: 4rem;
+      max-width: 450px;
+      letter-spacing: 0.8px;
+      line-height: 1.3;
+      margin-bottom: 4rem; }
+    #lead .text-section p {
+      font-size: 1.6rem;
+      max-width: 400px;
+      line-height: 1.5;
+      margin-bottom: 4rem; }
+    #lead .text-section button {
+      max-width: 200px; }
   #lead .image-section {
     flex: 1;
     text-align: center; }

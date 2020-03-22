@@ -17,8 +17,10 @@
       <nav class="main-nav">
         <div class="nav-container">
           <div class="main-nav-logo">
-            <i class="fas fa-border-style fa-3x"></i>
-            <h2 class="logo">facturio</h2>
+            <a href="index.html"><i class="fas fa-border-style fa-3x"></i></a>
+            <a href="index.html">
+              <h2 class="logo">facturio</h2>
+            </a>
           </div>
 
           <div class="nav-links">
@@ -30,8 +32,17 @@
           </div>
 
           <div class="nav-buttons">
-            <a class="btn btn-ghost">Login</a>
-            <a class="btn">Cont nou</a>
+            <form action="auth.html">
+              <button class="btn btn-ghost">
+                Login
+              </button>
+            </form>
+
+            <form action="auth.html">
+              <button class="btn">Cont nou</button>
+            </form>
+            <!-- <a class="btn btn-ghost" href="#">Login</a> -->
+            <!-- <a class="btn" href="#">Cont nou</a> -->
           </div>
         </div>
       </nav>
@@ -47,7 +58,8 @@
             Manage makes it simple for software teams to plan day-to-day tasks
             while keeping the larger team goals in view.
           </p>
-          <a class="btn">Cont nou</a>
+          <button class="btn">Cont nou</button>
+          <!-- <a class="btn">Cont nou</a> -->
         </div>
         <div class="image-section">
           <img src="./images/illustration-intro.svg" alt="Ilustration" />
