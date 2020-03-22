@@ -1,0 +1,13 @@
+//Background images
+.image-container::after {
+  content: '';
+  background: url('../images/bg-tablet-pattern.svg') no-repeat;
+  position: absolute;
+  top: -35%;
+  right: -30%;
+  height: 100%;
+  width: 945px;
+  margin: auto;
+  z-index: -1;
+  overflow: visible;
+}
