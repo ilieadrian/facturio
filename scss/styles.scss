@@ -2,9 +2,11 @@
 @import 'nav';
 // @import 'modal';
 @import 'frontend-index';
+@import 'footer';
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam:700|Roboto:300,400,500,700&display=swap');
 
 //Reusable styles
+
 * {
   margin: 0;
   padding: 0;
@@ -82,5 +84,21 @@ p {
 a {
   text-decoration: none;
 }
+// Move me to footer
+footer {
+  height: 250px;
+  background-color: $neutral-very-dark;
+  overflow: hidden;
+}
 
-// About section !!! MOME ME TO FRONTEND
+.footer-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: space-between;
+}
+
+.logo-social {
+  display: flex;
+}

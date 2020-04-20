@@ -66,7 +66,7 @@
   width: 945px;
   margin: auto;
   z-index: -1;
-  overflow: visible; }
+  overflow: hidden; }
 
 #lead {
   display: flex;
@@ -226,3 +226,18 @@ p {
 
 a {
   text-decoration: none; }
+
+footer {
+  height: 250px;
+  background-color: #1d1e25;
+  overflow: hidden; }
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  justify-content: space-between; }
+
+.logo-social {
+  display: flex; }
