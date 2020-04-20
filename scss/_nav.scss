@@ -9,24 +9,6 @@
     flex-wrap: wrap;
     margin-bottom: 6rem;
 
-    .main-nav-logo {
-      display: flex;
-      i {
-        color: $primary-color-bright;
-        font-size: 3rem;
-      }
-
-      h2 {
-        font-size: 3rem;
-        line-height: 3rem;
-        margin-left: 0.5rem;
-      }
-
-      a {
-        color: $primary-color-dark;
-      }
-    }
-
     .nav-links {
       ul {
         display: flex;
@@ -58,5 +40,31 @@
         margin-right: 2rem;
       }
     }
+  }
+}
+
+//Logo setup
+
+.main-nav-logo {
+  display: flex;
+  i {
+    color: $primary-color-bright;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-left: 0.5rem;
+  }
+
+  a {
+    color: $primary-color-dark;
+  }
+}
+
+.secondary-logo {
+  h2 {
+    color: $neutral-light;
   }
 }
