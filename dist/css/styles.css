@@ -37,36 +37,12 @@
   .main-nav-logo h2 {
     font-size: 3rem;
     line-height: 3rem;
-    margin-left: 0.5rem; }
+    margin-left: 1rem; }
   .main-nav-logo a {
     color: #242d52; }
 
 .secondary-logo h2 {
   color: #fafafa; }
-
-.image-container::after {
-  content: '';
-  background: url("../images/bg-tablet-pattern.svg") no-repeat;
-  position: absolute;
-  top: -35%;
-  right: -30%;
-  height: 100%;
-  width: 945px;
-  margin: auto;
-  z-index: -1;
-  overflow: visible; }
-
-.about-image-container::after {
-  content: '';
-  background: url("../images/bg-tablet-pattern.svg") no-repeat;
-  position: absolute;
-  bottom: -40%;
-  left: -30%;
-  height: 60%;
-  width: 945px;
-  margin: auto;
-  z-index: -1;
-  overflow: hidden; }
 
 #lead {
   display: flex;
@@ -252,7 +228,8 @@ footer {
   justify-content: space-between;
   align-content: space-between; }
   .logo-social h2 {
-    color: #fafafa; }
+    color: #fafafa;
+    margin-left: 1rem; }
   .logo-social .footer-social-links {
     display: flex;
     justify-content: space-between; }
