@@ -26,7 +26,6 @@ body {
   margin: auto;
   position: relative;
   height: 100%;
-  // overflow: visible;
 }
 
 button {
@@ -36,13 +35,13 @@ button {
 .btn {
   text-transform: uppercase;
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: $font-md;
   cursor: pointer;
   background-color: $primary-color-bright;
   color: $neutral-light;
   padding: 1rem 3rem;
   border: 3px solid $primary-color-bright;
-  border-radius: 24px;
+  border-radius: $frontend-b-r;
   font-weight: 700;
 }
 
@@ -71,13 +70,13 @@ button {
 h1,
 h2 {
   color: $primary-color-dark;
-  font-size: 3.5rem;
+  font-size: $font-xl;
   line-height: 1.2;
 }
 
 p {
   color: $neutral-dark;
-  font-size: 1.5rem;
+  font-size: $font-md;
   line-height: 1.2;
 }
 
@@ -97,7 +96,7 @@ footer {
   a {
     color: $neutral-pale;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: $font-s;
   }
 }
 
@@ -127,7 +126,7 @@ footer {
 
       i {
         color: $neutral-light;
-        font-size: 1.8rem;
+        font-size: $font-lg;
         cursor: pointer;
       }
 
@@ -157,13 +156,61 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 
-    .newsletter-form {
+    form {
       display: flex;
-      // flex-direction: column;
+      flex-direction: row;
+      position: relative;
+
+      input {
+        padding: 10px 20px;
+        margin-right: 1.5rem;
+        border-radius: $frontend-b-r;
+        font-size: $font-s;
+        color: $primary-color-dark;
+        border: none;
+        outline: none;
+        &:focus {
+          box-shadow: 0 0 2px $neutral-pale;
+          outline: none;
+        }
+        &:active {
+          outline: none;
+        }
+      }
+
+      #btn-footer {
+        padding: 1rem 2rem;
+        &:hover {
+          border: 3px solid lighten($primary-color-bright, 20%);
+          background-color: lighten($primary-color-bright, 20%);
+        }
+      }
+
+      #newsletter-error {
+        position: absolute;
+        bottom: -20px;
+        left: 20px;
+        color: $primary-color-bright;
+        font-size: $font-xs;
+        font-style: italic;
+        display: none;
+      }
+    }
+
+    //Setting for error status on form
+
+    form.error input[type='email'] {
+      border: 1px solid $primary-color-bright;
+      box-shadow: none;
+      color: $primary-color-bright;
+    }
+
+    form.error #newsletter-error {
+      display: block;
     }
 
     .copyright-note {
-      font-size: 1.1rem;
+      font-size: $font-xs;
       text-align: right;
     }
   }

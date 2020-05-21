@@ -159,28 +159,26 @@
           </ul>
 
           <div class="newsletter-copyright">
-            <form class="newsletter-form">
-              <div class="form-control" id="emailID">
-                <input
-                  type="email"
-                  aria-label="email"
-                  id="email"
-                  name="email"
-                  placeholder="Updates in your inbox"
-                  no-validate
-                />
-                <p id="newsletter-error">Please inser a valid email</p>
+            <form class="newsletter-form" id="form">
+              <input
+                type="email"
+                aria-label="email"
+                id="email"
+                name="email"
+                placeholder="Updates in your inbox..."
+                no-validate
+              />
+              <p id="newsletter-error">Please insert a valid email</p>
 
-                <button
-                  id="btn"
-                  class="btn"
-                  aria-label="Send"
-                  href="#"
-                  type="submit"
-                >
-                  GO
-                </button>
-              </div>
+              <button
+                id="btn-footer"
+                class="btn"
+                aria-label="Send"
+                href="#"
+                tykpe="submit"
+              >
+                GO
+              </button>
             </form>
 
             <p class="copyright-note">
@@ -233,5 +231,6 @@
 
     <!-- Links to JS files -->
     <script src="scripts/modal.js"></script>
+    <script src="scripts/validations.js"></script>
   </body>
 </html>

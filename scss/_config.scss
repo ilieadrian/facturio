@@ -1,5 +1,7 @@
 $desktop-width: 1440px;
 $mobile-width: 375px;
+
+//Colors
 $primary-color-bright: hsl(12, 88%, 59%);
 $primary-color-dark: hsl(228, 39%, 23%);
 $neutral-dark: hsl(227, 12%, 61%);
@@ -7,6 +9,19 @@ $neutral-very-dark: hsl(233, 12%, 13%);
 $neutral-pale: hsl(13, 100%, 96%);
 $neutral-light: hsl(0, 0%, 98%);
 
+//font-sizes
+$font-xs: 1.1rem;
+$font-s: 1.4rem;
+$font-md: 1.5rem;
+$font-normal: 1.6rem;
+$font-lg: 1.8rem;
+$font-xl: 3.5rem;
+$font-xxl: 4rem;
+
+//Border radius
+$frontend-b-r: 24px;
+
+//Mixins
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
