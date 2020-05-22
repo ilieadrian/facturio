@@ -1,6 +1,6 @@
 const credentials = document.querySelector('.credentials');
 const btns = document.querySelectorAll('.tab-btn');
-const articles = document.querySelectorAll('.content');
+const forms = document.querySelectorAll('.form-tab');
 
 credentials.addEventListener('click', function (e) {
   const id = e.target.dataset.id;
@@ -11,8 +11,8 @@ credentials.addEventListener('click', function (e) {
     });
     e.target.classList.add('active');
     // hide other articles
-    articles.forEach(function (article) {
-      article.classList.remove('active');
+    forms.forEach(function (form) {
+      form.classList.remove('active');
     });
     const element = document.getElementById(id);
     element.classList.add('active');

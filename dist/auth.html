@@ -13,60 +13,44 @@
     <title>Facturio - facturi online</title>
   </head>
 
-  <body>
-    <div class="container">
-      <nav class="main-nav">
-        <div class="nav-container">
-          <div class="main-nav-logo" hre>
-            <a href="index.html"><i class="fas fa-border-style fa-3x"></i></a>
-            <a href="index.html"><h2 class="logo">facturio</h2></a>
-          </div>
-
-          <div class="nav-links">
-            <ul>
-              <li><a href="#">Produs</a></li>
-              <li><a href="#">Despre noi</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-
-          <div class="nav-buttons">
-            <button class="btn btn-ghost" btn type="submit" formaction="/dist/">
-              Login
-            </button>
-            <button class="btn">Cont nou</button>
-            <!-- <a class="btn btn-ghost" href="#">Login</a> -->
-            <!-- <a class="btn" href="#">Cont nou</a> -->
-          </div>
-        </div>
-      </nav>
-      <div class="image-container"></div>
-
+  <body class="auth">
+    <div class="container auth-container">
       <section class="credentials">
-            <!-- btn container -->
+            <p class="returnt-to-index"> <i class="fas fa-arrow-left"></i> Back to site</p>
             <div class="btn-container">
-              <button class="tab-btn" data-id="history">history</button>
-              <button class="tab-btn active" data-id="vision">vision</button>
+              <button class="tab-btn" data-id="login">Login</button>
+              <span>/</span>
+              <button class="tab-btn active" data-id="new-account">New account</button>
             </div>
-          </div>
-
-          <div class="about-content">
-            <!-- single item -->
-            <div class="content" id="history">
-              <h4>history</h4>
-            </div>
-            <!-- end of single item -->
-            <!-- single item -->
-            <div class="content active" id="vision">
-              <h4>vision</h4>
           
-            </div>
-            </section>
-      <!-- end of single item -->
 
+          <div class="form-container" id="form-control">
+            <form class="form-tab" id="login">
+              <h2>Login</h2>
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="Username" value="Email / Username">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" value="******"><
+              <input type="submit" class ="form-btn" value="Login">
+              <p>Forgot password?</p>
+            </form>
+            
+            <form class="form-tab active" id="new-account">
+              <h2>Register new account</h2>
+              <label for="fiscal-code">Fiscal code:</label>
+              <input type="text" id="fiscal-code" name="fiscal-code" value=".">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" value="@">
+              <label for="password2">Confirm password:</label>
+              <input type="password2" id="password2" name="password2" value="******">
+              <input type="submit" class="form-btn" value="Create account">
+          
+            </form>
+      </section>
+      
+</div>  
 
     <!-- Links to JS files -->
-    <!-- <script src="scripts/modal.js"></script> -->
     <!-- <script src="scripts/validations.js"></script> -->
     <script src="scripts/auth.js"></script>
   </body>
