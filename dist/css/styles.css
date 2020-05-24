@@ -299,16 +299,45 @@ a {
   height: 100vh; }
 
 .auth-container {
-  border: 1px solid #333;
   display: block;
   width: 50%;
   max-width: 600px;
   min-width: 300px;
-  height: 450px;
-  background: 1; }
+  height: 450px; }
+
+.auth-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px; }
+
+.credentials {
+  height: 100%;
+  position: relative; }
+  .credentials .btn-container {
+    width: 100%;
+    height: 10%;
+    display: flex; }
+    .credentials .btn-container .tab-btn {
+      width: 50%;
+      border: 0;
+      background-color: transparent; }
+    .credentials .btn-container .tab-btn.active {
+      opacity: 0.1; }
 
 .form-tab {
   display: none; }
 
 .form-tab.active {
   display: block; }
+
+.return-to-index {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center; }
+  .return-to-index a {
+    color: #fafafa;
+    font-size: 1.5rem;
+    letter-spacing: 1.1px; }
