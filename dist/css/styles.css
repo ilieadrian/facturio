@@ -308,7 +308,7 @@ a {
 .auth-overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.1);
+  background: #fff;
   border-radius: 5px; }
 
 .credentials {
@@ -319,11 +319,18 @@ a {
     height: 10%;
     display: flex; }
     .credentials .btn-container .tab-btn {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
       width: 50%;
       border: 0;
-      background-color: transparent; }
-    .credentials .btn-container .tab-btn.active {
-      opacity: 0.1; }
+      background-color: #fafafa;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2c3763;
+      position: relative; }
+      .credentials .btn-container .tab-btn.active {
+        color: #242d52;
+        background-color: #fff; }
 
 .form-tab {
   display: none; }
