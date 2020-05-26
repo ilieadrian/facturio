@@ -1,3 +1,5 @@
+// s
+
 const credentials = document.querySelector('.credentials');
 const btns = document.querySelectorAll('.tab-btn');
 const forms = document.querySelectorAll('.form-tab');

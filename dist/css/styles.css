@@ -296,7 +296,8 @@ a {
   background: linear-gradient(to left, #de6262, #ffb88c);
   display: flex;
   align-items: center;
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
 
 .auth-container {
   display: block;
