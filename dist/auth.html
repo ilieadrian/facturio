@@ -19,39 +19,34 @@
       <section class="credentials">
             
             <div class="btn-container">
-              <button class="tab-btn login" data-id="login">Login</button>
-              <button class="tab-btn new-account active" data-id="new-account">  New account</button>
+              <button class="tab-btn login active" data-id="login">Login</button>
+              <button class="tab-btn new-account " data-id="new-account">  New account</button>
             </div>
         
           <div class="form-container" id="form-control">
-            <form class="form-tab active" id="login">
-              <!-- <label for="username">Username:</label> -->
+            <form class="form-tab login-form active" id="login">
               <input type="text" id="username" name="Username" placeholder="Email">
-              <!-- <label for="password">Password</label> -->
               <input type="password" id="password" name="password" placeholder="Password">
-              <input type="submit" class ="form-btn" value="Login">
+              <input type="submit" class ="form-btn btn" value="Login">
               <p>Forgot password?</p>
             </form>
             
-            <form class="form-tab" id="new-account">
-              <!-- <label for="fiscal-code">Fiscal code:</label> -->
+            <form class="form-tab new-account-form" id="new-account">
               <input type="text" id="fiscal-code" name="fiscal-code" placeholder="Fiscal code">
-              <!-- <label for="email">Email:</label> -->
               <input type="email" id="email" name="email" placeholder="Email">
-              <!-- <label for="password2">Confirm password:</label> -->
               <input type="password" id="password" name="password" placeholder="Password">
               <input type="password2" id="password2" name="password2" placeholder="Confirm password">
-              <input type="submit" class="form-btn" value="Create account">
+              <input type="submit" class="form-btn btn" value="Create account">
           
             </form>
-            <p class="return-to-index"> <a href="index.html">Back to homepage</a></p>
+    
       </section>
+      <p class="return-to-index"> <a href="index.html">Back to homepage</a></p>
       </div>
       
 </div>  
 
     <!-- Links to JS files -->
-    <!-- <script src="scripts/validations.js"></script> -->
     <script src="scripts/auth.js"></script>
   </body>
 </html>

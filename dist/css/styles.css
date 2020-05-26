@@ -323,6 +323,7 @@ a {
       border-top-right-radius: 5px;
       width: 50%;
       border: 0;
+      outline: none;
       background-color: #fafafa;
       font-size: 1.8rem;
       font-weight: 700;
@@ -332,11 +333,63 @@ a {
         color: #242d52;
         background-color: #fff; }
 
+.form-container {
+  position: relative; }
+
+.login-form,
+.new-account-form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .login-form input,
+  .new-account-form input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    color: #242d52;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #9095a7; }
+    .login-form input::placeholder,
+    .new-account-form input::placeholder {
+      color: #242d52; }
+    .login-form input:focus,
+    .new-account-form input:focus {
+      outline: none; }
+  .login-form .form-btn,
+  .new-account-form .form-btn {
+    margin-top: 3rem;
+    width: 50%;
+    align-self: center;
+    background: #fff;
+    border: 3px solid #f25f3a; }
+    .login-form .form-btn:hover,
+    .new-account-form .form-btn:hover {
+      border: 3px solid #242d52;
+      background: #242d52;
+      color: #fafafa; }
+  .login-form p,
+  .new-account-form p {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.4rem;
+    cursor: pointer; }
+
+#login {
+  padding: 10rem 7rem; }
+
+#new-account {
+  padding: 4rem 7rem; }
+
 .form-tab {
-  display: none; }
+  position: absolute;
+  left: 5999px; }
 
 .form-tab.active {
-  display: block; }
+  left: 0; }
 
 .return-to-index {
   position: absolute;
