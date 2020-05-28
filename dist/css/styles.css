@@ -233,9 +233,10 @@ footer {
   font-size: 10px;
   font-family: 'Roboto', sans-serif; }
 
-body {
+body,
+html {
   height: 100%;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .container {
   width: 90%;
@@ -297,8 +298,7 @@ a {
   display: flex;
   align-items: center;
   height: 100vh;
-  width: 100vw;
-  overflow: hidden; }
+  width: 100%; }
 
 .auth-container {
   display: block;
@@ -314,23 +314,33 @@ a {
   border-radius: 5px; }
 
 .credentials {
+  width: 100%;
   height: 100%;
   position: relative; }
   .credentials .btn-container {
     width: 100%;
     height: 10%;
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center; }
     .credentials .btn-container .tab-btn {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-      width: 50%;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
       border: 0;
       outline: none;
+      cursor: pointer;
       background-color: #fafafa;
       font-size: 1.8rem;
       font-weight: 700;
+      text-align: center;
       color: #2c3763;
-      position: relative; }
+      display: block; }
       .credentials .btn-container .tab-btn.active {
         color: #242d52;
         background-color: #fff; }
@@ -344,11 +354,12 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-items: center;
   position: relative; }
   .login-form input,
   .new-account-form input {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem 1rem 0.2rem 0;
     border: none;
     outline: none;
     font-size: 1.8rem;
@@ -360,11 +371,14 @@ a {
       color: #242d52; }
     .login-form input:focus,
     .new-account-form input:focus {
-      outline: none; }
+      outline: none;
+      border-bottom: 1.5px solid #1d1e25;
+      transition: all 0.2s ease-in-out; }
   .login-form .form-btn,
   .new-account-form .form-btn {
     margin-top: 3rem;
     width: 50%;
+    padding: 1rem;
     align-self: center;
     background: #fff;
     border: 3px solid #f25f3a; }
@@ -375,23 +389,34 @@ a {
       color: #fafafa; }
   .login-form p,
   .new-account-form p {
+    display: block;
     text-align: center;
     margin-top: 5rem;
     font-size: 1.4rem;
     cursor: pointer; }
+
+.input-container {
+  position: relative; }
+  .input-container small {
+    color: #f25f3a;
+    position: absolute;
+    right: 0px;
+    bottom: 50%;
+    display: none;
+    font-size: 1.1rem;
+    color: #ea2027; }
+
+.input-container.error small {
+  display: block; }
+
+.input-container.error input {
+  border-bottom: 1.5px solid #ea2027; }
 
 #login {
   padding: 10rem 7rem; }
 
 #new-account {
   padding: 4rem 7rem; }
-
-.form-tab {
-  position: absolute;
-  left: 5999px; }
-
-.form-tab.active {
-  left: 0; }
 
 .return-to-index {
   position: absolute;

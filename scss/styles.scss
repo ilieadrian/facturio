@@ -1,8 +1,8 @@
 @import 'config';
 @import 'nav';
-// @import 'modal';
 @import 'frontend-index';
 @import 'footer';
+@import 'auth';
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam:700|Roboto:300,400,500,700&display=swap');
 
 //Reusable styles
@@ -15,9 +15,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
+body,
+html {
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -90,8 +91,7 @@ a {
   display: flex;
   align-items: center;
   height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  width: 100%;
 }
 
 .auth-container {
@@ -111,6 +111,7 @@ a {
 }
 
 .credentials {
+  width: 100%;
   height: 100%;
   position: relative;
 
@@ -118,18 +119,27 @@ a {
     width: 100%;
     height: 10%;
     display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
 
     .tab-btn {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-      width: 50%;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
       border: 0;
       outline: none;
+      cursor: pointer;
       background-color: darken(#fff, 2);
       font-size: $font-lg;
       font-weight: 700;
+      text-align: center;
       color: lighten($primary-color-dark, 5);
-      position: relative;
+      display: block;
 
       &.active {
         color: $primary-color-dark;
@@ -150,11 +160,12 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-items: center;
   position: relative;
 
   input {
     width: 100%;
-    padding: 1rem;
+    padding: 2rem 1rem 0.2rem 0;
     border: none;
     outline: none;
     font-size: $font-lg;
@@ -166,12 +177,15 @@ a {
     }
     &:focus {
       outline: none;
+      border-bottom: 1.5px solid $neutral-very-dark;
+      transition: all 0.2s ease-in-out;
     }
   }
 
   .form-btn {
     margin-top: 3rem;
     width: 50%;
+    padding: 1rem;
     align-self: center;
     background: #fff;
     border: 3px solid $primary-color-bright;
@@ -183,11 +197,33 @@ a {
   }
 
   p {
+    display: block;
     text-align: center;
     margin-top: 5rem;
     font-size: $font-s;
     cursor: pointer;
   }
+}
+
+.input-container {
+  position: relative;
+  small {
+    color: $primary-color-bright;
+    position: absolute;
+    right: 0px;
+    bottom: 50%;
+    display: none;
+    font-size: $font-xs;
+    color: $error-color;
+  }
+}
+
+.input-container.error small {
+  display: block;
+}
+
+.input-container.error input {
+  border-bottom: 1.5px solid $error-color;
 }
 
 #login {
@@ -196,14 +232,6 @@ a {
 
 #new-account {
   padding: 4rem 7rem;
-}
-
-.form-tab {
-  position: absolute;
-  left: 5999px;
-}
-.form-tab.active {
-  left: 0;
 }
 
 .return-to-index {

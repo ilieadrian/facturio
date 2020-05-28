@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous" />
+    <title>Facturio - facturi online</title>
+</head>
+
+<body class="auth">
+    <div class="container auth-container">
+        <div class="auth-overlay">
+            <section class="credentials">
+
+                <div class="btn-container">
+                    <a href="login.html" class="tab-btn login" data-id="login">Login</a>
+                    <a href="newaccount.html" class="tab-btn new-account active" data-id="new-account">New account</a>
+                
+                </div>
+
+                <div class="form-container" id="form-control">
+                    <form class="form-tab new-account-form" id="new-account">
+                        <div class="input-container">
+                            <input type="text" id="fiscal-code" name="fiscal-code" placeholder="Fiscal code">
+                            <small>Error</small>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="email" id="email" name="email" placeholder="Email">
+                            <small>Error</small>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="password" id="password" name="password" placeholder="Password">
+                            <small>Error</small>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="password2" id="password2" name="password2" placeholder="Confirm password">
+                            <small>Error</small>
+                        </div>
+                        <input type="submit" class="form-btn btn" value="Create account">
+                    </form>
+
+            </section>
+            <p class="return-to-index"> <a href="index.html">Back to homepage</a></p>
+        </div>
+
+    </div>
+
+    <!-- Links to JS files -->
+    <script src="scripts/auth.js"></script>
+</body>
+
+</html>

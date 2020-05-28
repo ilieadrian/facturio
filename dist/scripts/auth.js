@@ -1,5 +1,4 @@
-// s
-
+//Login-new account switcher
 const credentials = document.querySelector('.credentials');
 const btns = document.querySelectorAll('.tab-btn');
 const forms = document.querySelectorAll('.form-tab');
@@ -19,4 +18,12 @@ credentials.addEventListener('click', function (e) {
     const element = document.getElementById(id);
     element.classList.add('active');
   }
+});
+
+// Login-new account form data validate
+const form = document.getElementById('form-control');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  console.log('asdas');
 });

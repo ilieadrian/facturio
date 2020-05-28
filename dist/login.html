@@ -17,27 +17,27 @@
     <div class="container auth-container">
       <div class="auth-overlay">
       <section class="credentials">
-            
+
             <div class="btn-container">
-              <button class="tab-btn login active" data-id="login">Login</button>
-              <button class="tab-btn new-account " data-id="new-account">  New account</button>
+                <a href="login.html" class="tab-btn login active" data-id="login">Login</a>
+                <a href="newaccount.html" class="tab-btn new-account" data-id="new-account">New account</a>
+              </form>
             </div>
         
           <div class="form-container" id="form-control">
-            <form class="form-tab login-form active" id="login">
+            <form class="form-tab login-form" id="login">
+              <div class="input-container error">
               <input type="text" id="username" name="Username" placeholder="Email">
+              <small>error</small>
+              </div>
+              
+              <div class="input-container">
               <input type="password" id="password" name="password" placeholder="Password">
+              <small>Error</small>
+              </div>
+
               <input type="submit" class ="form-btn btn" value="Login">
               <p>Forgot password?</p>
-            </form>
-            
-            <form class="form-tab new-account-form" id="new-account">
-              <input type="text" id="fiscal-code" name="fiscal-code" placeholder="Fiscal code">
-              <input type="email" id="email" name="email" placeholder="Email">
-              <input type="password" id="password" name="password" placeholder="Password">
-              <input type="password2" id="password2" name="password2" placeholder="Confirm password">
-              <input type="submit" class="form-btn btn" value="Create account">
-          
             </form>
     
       </section>
