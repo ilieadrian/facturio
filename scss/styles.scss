@@ -205,7 +205,7 @@ a {
   }
 }
 
-.input-container {
+.form-control {
   position: relative;
   small {
     color: $primary-color-bright;
@@ -218,11 +218,11 @@ a {
   }
 }
 
-.input-container.error small {
+.form-control.error small {
   display: block;
 }
 
-.input-container.error input {
+.form-control.error input {
   border-bottom: 1.5px solid $error-color;
 }
 

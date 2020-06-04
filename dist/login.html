@@ -16,35 +16,33 @@
   <body class="auth">
     <div class="container auth-container">
       <div class="auth-overlay">
-      <section class="credentials">
+        <section class="credentials">
+              <div class="btn-container">
+                  <a href="login.html" class="tab-btn login active" data-id="login">Login</a>
+                  <a href="newaccount.html" class="tab-btn new-account" data-id="new-account">New account</a>
+                </form>
+              </div>
+          
+            <div class="form-container" id="form">
+              <form class="form-tab login-form" id="login">
+                <div class="form-control">
+                  <input type="email" id="username" name="Email / Username" placeholder="Email">
+                  <small>error</small>
+                </div>
+                
+                <div class="form-control">
+                  <input type="password" id="password" name="password" placeholder="Password">
+                  <small>Error</small>
+                </div>
 
-            <div class="btn-container">
-                <a href="login.html" class="tab-btn login active" data-id="login">Login</a>
-                <a href="newaccount.html" class="tab-btn new-account" data-id="new-account">New account</a>
+                <input type="submit" class ="form-btn btn" value="Login">
+                <p>Forgot password?</p>
               </form>
-            </div>
-        
-          <div class="form-container" id="form-control">
-            <form class="form-tab login-form" id="login">
-              <div class="input-container error">
-              <input type="text" id="username" name="Username" placeholder="Email">
-              <small>error</small>
-              </div>
-              
-              <div class="input-container">
-              <input type="password" id="password" name="password" placeholder="Password">
-              <small>Error</small>
-              </div>
-
-              <input type="submit" class ="form-btn btn" value="Login">
-              <p>Forgot password?</p>
-            </form>
-    
-      </section>
+        </section>
       <p class="return-to-index"> <a href="index.html">Back to homepage</a></p>
       </div>
       
-</div>  
+    </div>  
 
     <!-- Links to JS files -->
     <script src="scripts/auth.js"></script>
