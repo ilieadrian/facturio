@@ -2,13 +2,19 @@
   "name": "facturio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "start": "nodemon dist/scripts/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mysql": "^2.18.1",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.4"
   }
 }
