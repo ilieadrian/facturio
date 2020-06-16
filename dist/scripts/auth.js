@@ -52,9 +52,9 @@ function checkLength(input, min, max) {
   }
 }
 
-function checkPasswordsMatch(input1, input2) {
-  if (input1.value !== input2.value) {
-    showError(input2, 'Passwords do not match');
+function checkPasswordsMatch(password, password2) {
+  if (password.value !== password2.value) {
+    showError(password2, 'Passwords do not match');
   }
 }
 
@@ -64,7 +64,8 @@ function getFieldName(input) {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
+  
   checkRequired([username, fiscalCode, password, password2]);
+  checkPasswordsMatch([password, password2]);
   checkUsername(username);
 });

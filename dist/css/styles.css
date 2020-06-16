@@ -294,7 +294,7 @@ a {
   text-decoration: none; }
 
 .auth {
-  background-color: chocolate;
+  background: linear-gradient(to left, #de6262, #ffb88c);
   display: flex;
   align-items: center;
   height: 100vh;
